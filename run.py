@@ -9,10 +9,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-"""@app.route('/params')
-def params():
-    param = request.args.get('params1', 'it has no parameters')
-    return 'the parameter is: {}'.format(param)"""
+@app.route('/client')
+def client():
+    list_name = ['client1', 'client2', 'client3', 'client4']
+    return render_template("client.html", list=list_name)
 
 @app.route('/params')
 @app.route('/params/<name>/')
