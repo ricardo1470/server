@@ -21,4 +21,4 @@ def params(name = "value", num = "nothing"):
     return ('the parameter is: {} {}'.format(name, num))
 
 if __name__ == '__main__':
-    app.run(debug= True, port=9000)#run server port 9000
+    app.run(debug= True, port=9000, host='127.0.0.1')#run server port 9000
